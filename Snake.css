@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("Snakebg.jpg"); 
+    min-height: 94.5vh;
+    background-size: 100vw 94.5vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#board{
+    background: linear-gradient(rgb(247, 232, 169), rgb(170, 243, 219), hotpink);
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px dotted blue;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(red, yellow);
+    border: 2px dotted hotpink; 
+    transform: scale(1.02);
+    border-radius: 2px;
+}
+
+.snake{
+    background-color: rgb(15, 128, 0);
+    border: .25vmin solid rgb(236, 38, 38);
+    border-radius: 8px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 15px;
+}
+
+#speed{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#speedSelect{
+    position: absolute;
+    top: 134px;
+    left: 15px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+.btn{
+    margin: 20px 12px;
+    font-size: 1.5rem;
+    padding: 6px 8px;
+    background-color: chartreuse;
+    color: indigo;
+}
+.btn:hover{
+    background-color: rgb(78, 165, 236);
+    color: rgb(130, 0, 0);
+}
+
+#currentspeed{
+    position: absolute;
+    top: 225px;
+    left: 8px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
